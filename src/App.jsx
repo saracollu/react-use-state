@@ -41,7 +41,8 @@ function App() {
     <div className="languagesClass" style={{ borderRadius: "1rem" }}>
       {languages.map(item => (
         <div className="item" style={{ padding: "1rem", border: "none", marginBottom: "5rem" }} key={item.id}>
-          <button onClick={() => setIsActive(item.id)} style={{ backgroundColor: "mediumBlue" }}>
+          <button onClick={() => setIsActive(item.id)} style={{ backgroundColor: "deepskyblue", border: "none", borderRadius: "1rem" }}>
+
             <h2>{item.title}</h2>
           </button>
           {isActive === item.id && (
